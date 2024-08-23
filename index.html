@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- Lightbox CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    
+        <title>Data Analyst Portfolio</title>
+    
+        <!-- Lightbox JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="text-container">
+            <div class="caveat-text">
+                <p>Hello, I am <span class="formal-text">Shruti Rout!</span></p>
+            </div>
+            <div class="formal-text-large">
+                <p>Transforming Data into Insights for Smarter Business Decisions.</p>
+            </div>
+            <!-- Add multiple circles with different sizes -->
+            <div class="circle small moving" style="top: 5%; right: 20%;"></div>
+            <div class="circle small moving" style="top: 5%; right: 5%;"></div>
+            <div class="circle small moving" style="top: 5%; left: 30%;"></div>
+            <div class="circle small moving" style="top: 5%; right: 15%;"></div>
+            <div class="circle medium moving" style="top: 25%; left: 40%;"></div>
+            <div class="circle small moving" style="top: 35%; left: 25%;"></div>
+            <div class="circle small moving" style="top: 50%; left: 60%;"></div>
+            <div class="circle medium moving" style="top: 70%; left: 80%;"></div>
+            <div class="circle small moving" style="top: 10%; left: 75%;"></div>
+            <div class="circle small moving" style="top: 45%; left: 10%;"></div>
+            <div class="circle large moving" style="top: 60%; left: 25%;"></div>
+            <div class="circle large moving" style="top: 40%; left: 5%;"></div>
+            <div class="circle medium moving" style="top: 80%; left: 35%;"></div>
+            <div class="circle small moving" style="top: 20%; left: 50%;"></div>
+            <div class="circle small moving" style="top: 65%; left: 80%;"></div>
+            <div class="circle medium moving" style="top: 90%; left: 20%;"></div>
+            <div class="circle medium moving" style="top: 30%; left: 35%;"></div>
+            <div class="circle small moving" style="top: 40%; left: 75%;"></div>
+            <div class="circle small moving" style="top: 85%; left: 55%;"></div>
+            <div class="circle small moving" style="top: 10%; left: 10%;"></div>
+            <!-- Add more circles as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2><span class="title-part1">About</span> <span class="title-part2">Me</span></h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Analytical and Applied Economics Postgraduate | Data Storyteller</h3>
+                <p>As an Economics student, I have always been fascinated by the impact of data on economic models. During my final year of study, I worked extensively with datasets for my dissertation. This involved months of collecting, cleaning, and analyzing data, followed by writing a comprehensive report and presenting my findings. This hands-on experience sparked my interest in data analysis, so I explored the field further and realized that it aligned perfectly with my analytical background. Then what? I knew this was the path for me. My journey since then has been one of constant learning and growth.</p>
+                <p>Feel free to explore my portfolio to see some of the projects that reflect my abilities and dedication to the field. I am excited about the opportunity to apply these skills in a professional setting and contribute to data-driven decision-making.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2><span class="title-part1">Key</span> <span class="title-part2">Skills</span></h2>
+        <div class="skill-box">Excel</div>
+        <div class="skill-box">SQL</div>
+        <div class="skill-box">Power BI</div>
+        <div class="skill-box">Effective Communication</div>
+        <div class="skill-box">Problem Solving</div>
+        <div class="skill-box">Creative Presentation</div>
+    </section>
+    
+
+    <section id="projects">
+        <h2><span class="title-part1">My</span> <span class="title-part2">Projects</span></h2>
+        <div class="project-category">
+            <img src="images/excel.png" alt="Excel Icon" class="project-icon">
+            <h3>Excel</h3>
+            <button onclick="openPopup('excel-popup')">View Projects</button>
+        </div>
+        <div class="project-category">
+            <img src="images/sql.png" alt="SQL Icon" class="project-icon">
+            <h3>SQL</h3>
+            <button onclick="openPopup('sql-popup')">View Projects</button>
+        </div>
+        <div class="project-category">
+            <img src="images/power bi.png" alt="Power BI Icon" class="project-icon">
+            <h3>Power BI</h3>
+            <button onclick="openPopup('powerbi-popup')">View Projects</button>
+        </div>
+    </section>
+       
+
+    <section id="certificates">
+        <h2><span class="title-part1">My</span> <span class="title-part2">Certificates</span></h2>
+        <div class="certificates-container">
+            <!-- Certificate thumbnails -->
+            <div class="certificate">
+                <img src="images 2/Business Excel.png" alt="Certificate 4">
+            </div>
+            <div class="certificate">
+                <img src="images 2/sql cer.png" alt="Certificate 5">
+            </div>
+            <div class="certificate portrait">
+            <img src="images 2/Power BI Micro Degree.png" alt="Certificate 5">
+            </div>
+            <div class="certificate">
+            <img src="images 2/PWC.png" alt="Certificate 5">
+            </div>
+            <div class="certificate">
+            <img src="images 2/TATA  Data Visualization.png" alt="Certificate 5">
+            </div>
+        </div>
+    </section>       
+
+    <section id="contact">
+        <h2><span class="title-part1">Contact</span> <span class="title-part2">Me</span></h2>
+        <div class="contact-boxes">
+            <div class="contact-box">
+                <a href="mailto:shrutirout95@gmail.com">
+                    <img src="images/email.png" alt="Email" class="contact-icon">
+                </a>
+                <a href="mailto:shrutirout95@gmail.com">shrutirout95@gmail.com</a>
+            </div>
+            <div class="contact-box">
+                <a href="https://www.linkedin.com/in/shrutirout" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/shrutirout" target="_blank">Connect with me!</a>
+            </div>
+            <div class="contact-box">
+                <a href="https://github.com/routshruti" target="_blank">
+                    <img src="images/github.png" alt="GitHub" class="contact-icon">
+                </a>
+                <a href="https://github.com/routshruti" target="_blank">Find more projects here!</a>
+            </div>
+        </div>
+    </section>
+    
+    <div id="excel-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('excel-popup')">&times;</span>
+            
+            <a href="https://github.com/routshruti/Ecommerce-Store-Annual-Sales-Report-using-Excel" target="_blank">
+                <img src="images 3/annual report.png" alt="Excel Project Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>E-commerce Store Annual Sales Report</h3>
+                    <p>In this project, I created an annual sales report for the E-commerce Store for 2023. The report aims to analyze sales data, understand customer preferences, and identify areas to enhance sales performance in 2024.</p>
+                </div>
+            </a>
+    
+        </div>
+    </div>    
+    
+    <div id="sql-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('sql-popup')">&times;</span>
+            <a href="https://github.com/routshruti/Pizza-Runner-Operation-Analysis-Using-SQL" target="_blank">
+                <img src="images 3/Pizza.png" alt="SQL Project 1 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>Pizza Runner Operation Analysis</h3>
+                    <p>I explored and analyzed data related to a pizza delivery service in this project. It is divided into four focus areas: Pizza Metrics, Runner and Customer Experience, Ingredient Optimization, and Pricing and Ratings. Each section provides insights to enhance service efficiency, customer satisfaction, and overall business performance.</p>
+                </div>
+            </a>
+            <a href="https://github.com/routshruti/Consumer-Goods-Adhoc-Analysis-Using-SQL" target="_blank">
+                <img src="images 3/adhoc insights.png" alt="SQL Project 2 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>Consumer Goods Ad-hoc Analysis</h3>
+                    <p>In this project, I conducted an ad-hoc analysis for Atliq Hardware, a prominent company in the hardware manufacturing sector. The focus was on delivering valuable insights to support the company's expanding data analytics team in making informed decisions.</p>
+                </div>
+            </a>
+            <a href="https://github.com/routshruti/SQL-Restaurant-Business-CaseStudy" target="_blank">
+                <img src="images 3/Diner.png" alt="SQL Project 3 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>New Restaurant Business Insights</h3>
+                    <p>Danny's Diner is in its initial stages and has gathered some operational data. I analyzed this data to provide insights into customer behaviors, visiting patterns, spending habits, and menu preferences. My goal was to enhance the dining experience and assess the potential expansion of the loyalty program. Additionally, I created simple datasets for the team to review, eliminating the need to rely on SQL.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div id="powerbi-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('powerbi-popup')">&times;</span>
+            
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiMTg3ODUzNWMtNTQ5My00MDVjLWIwOTQtZDYxZTUxMzdjZjM0IiwidCI6Ijg2MzI4YTBhLWRhMGMtNGQzZS04OTE5LTc4OTcwMTZiMzNiMyJ9" target="_blank">
+                <img src="images 3/Ecommerce.png" alt="Power BI Project 1 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>E-commerce Store Sales Dashboard</h3>
+                    <p>It highlights KPIs such as total sales, quantity sold, revenue, and average order value. Designed to empower stakeholders, this dashboard offers actionable insights into profit trends, top-selling products, high-performing states, and key customers. With interactive visuals, data can be easily filtered by quarter or state to explore specific aspects of the store's performance.</p>
+                </div>
+            </a>
+            
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiMDVmYTk5NWEtYjIxNS00YzA0LWI0YWMtMDFjMWM4OGRhODg1IiwidCI6Ijg2MzI4YTBhLWRhMGMtNGQzZS04OTE5LTc4OTcwMTZiMzNiMyJ9" target="_blank">
+                <img src="images 3/atliq hotels.png" alt="Power BI Project 2 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>Atliq Hospitality Analysis</h3>
+                    <p>In response to declining market share and revenue in the luxury/business hotel sector, AtliQ Grands has undertaken a strategic initiative to integrate Business and Data Intelligence into its operations. This dashboard includes three pages: Executive Overview, Revenue, and Bookings, which provide insights into revenue metrics, booking patterns, and occupancy rates so that management can make informed decisions to counter competition and optimize operational efficiency.</p>
+                </div>
+            </a>
+            
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiMTE5MGIwMDEtMjRlOS00ZGI0LWE1MGYtMWRlOGVhYjQ3NGYyIiwidCI6Ijg2MzI4YTBhLWRhMGMtNGQzZS04OTE5LTc4OTcwMTZiMzNiMyJ9&pageName=49dc90f4b551c4ffe3d2" target="_blank">
+                <img src="images 3/credit.png" alt="Power BI Project 3 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>Credit Card Report</h3>
+                    <p>This dashboard offers a detailed analysis of credit card customer demographics, spending habits, and transaction trends. Key metrics such as interest earned, transaction amount, transaction volume, average income, and customer acquisition rates are prominently featured. It supports strategic decision-making by identifying high-value customers and optimizing marketing strategies.</p>
+                </div>
+            </a>
+            
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiOGNlM2ViMTItOTcxZi00ZTMwLTk0MDktMDE5MTA5OTZmNzNjIiwidCI6Ijg2MzI4YTBhLWRhMGMtNGQzZS04OTE5LTc4OTcwMTZiMzNiMyJ9&pageName=ReportSection6d651d31aa5123e7f6bc" target="_blank">
+                <img src="images 3/Retail store.png" alt="Power BI Project 4 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>Retail Sales and Forecasting Dashboard</h3>
+                    <p>This dashboard provides an analysis of sales performance along with 15-day forecasts for an online retail store. It highlights key metrics such as total sales, quantity sold, profit margins, sales growth, average shipping days, and return rates. Insights into high-revenue customers, regions, and top-performing product categories are also presented. Additionally, it compares monthly revenue and sales trends over two years to identify seasonal patterns. This comprehensive approach enables a thorough evaluation of business performance and key strengths, supporting effective strategic planning and growth initiatives.</p>
+                </div>
+            </a>
+            
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI1MzQyNGItNmM4Zi00YmE1LWFiMjAtODkzOTc4MWU4NzY4IiwidCI6Ijg2MzI4YTBhLWRhMGMtNGQzZS04OTE5LTc4OTcwMTZiMzNiMyJ9&pageName=11707f10eb807484d93e" target="_blank">
+                <img src="images 3/D & I.png" alt="Power BI Project 5 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>Diversity and Inclusion Dashboard</h3>
+                    <p>KPIs related to hiring, promotions, performance, and turnover are presented to provide clear insights into workforce diversity trends and equity in organizational practices, supporting informed decision-making to improve gender balance and foster a more inclusive work environment.</p>
+                </div>
+            </a>
+            
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiMjE5M2YyODEtYzI3NC00Mzg4LWI4MDgtZGE2NTNkYTkxYzJhIiwidCI6Ijg2MzI4YTBhLWRhMGMtNGQzZS04OTE5LTc4OTcwMTZiMzNiMyJ9" target="_blank">
+                <img src="images 3/call centre.png" alt="Power BI Project 6 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>Call Centre Trends</h3>
+                    <p>This dashboard provides insights into customer and agent behavior using call center data. Key performance metrics such as total calls, average speed of answer, average handle time, overall calls answered/abandoned/resolved, customer satisfaction score, and agent performance are visualized.</p>
+                </div>
+            </a>
+            
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiMjAzOGUwMWQtZmMyNC00ZWViLWFiNjUtMDk0MDk2OTM0OGE5IiwidCI6Ijg2MzI4YTBhLWRhMGMtNGQzZS04OTE5LTc4OTcwMTZiMzNiMyJ9" target="_blank">
+                <img src="images 3/Customer Churn.png" alt="Power BI Project 7 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>Customer Churn Dashboard</h3>
+                    <p>The Telecom Department dataset has been analyzed to provide insights into customer demographics, account information, and the services provided to identify the factors influencing churn. Using this dashboard, the retention manager can develop strategies to improve retention. Data can be filtered by gender, tenure, payment method, and contract type for more detailed understanding of various subsets of the dataset. </p>
+                </div>
+            </a>
+            
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiOTM0ODYzYjUtZWQzMS00ZmYzLWJiMDgtYmRiMjU0ZTJlZWJlIiwidCI6Ijg2MzI4YTBhLWRhMGMtNGQzZS04OTE5LTc4OTcwMTZiMzNiMyJ9" target="_blank">
+                <img src="images 3/HR.png" alt="Power BI Project 8 Banner" class="project-banner">
+                <div class="project-content">
+                    <h3>HR Analytics Dashboard</h3>
+                    <p>It focuses on metrics such as attrition rate, demographic analysis, and reasons for leaving to enable HR teams to identify patterns in employee departure, retain top talent, and enhance overall workforce stability.</p>
+                </div>
+            </a>
+    
+        </div>
+    </div>    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<footer>
+    <p>&copy; 2024 Shruti Rout. All Rights Reserved.</p>
+</footer>
+
+
+
+
+
