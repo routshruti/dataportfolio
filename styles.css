@@ -514,7 +514,115 @@ footer {
     margin-top: auto; /* Pushes footer to the bottom */
 }
 
+/* Default styles for desktop */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
 
+/* Mobile View CSS */
+@media (max-width: 768px) {
+
+    /* Header and Navigation */
+    header {
+        background: #e7e9ff;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        position: sticky; /* Stick to the top */
+        top: 0;
+        z-index: 1000; /* Ensure it stays on top of other content */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack the navigation links vertically */
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Add space between menu items */
+    }
+
+    nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 18px; /* Larger text for easier reading on mobile */
+        padding-bottom: 4px; /* Padding for better spacing */
+    }
+
+    /* Section Styles */
+    .section {
+        padding: 20px; /* Increase padding for better spacing */
+    }
+
+    /* About Section */
+    .about-content {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+        text-align: center; /* Center the text */
+    }
+
+    .about-content img {
+        width: 80%; /* Image takes up 80% of screen width */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .about-text {
+        font-size: 1.2em; /* Slightly larger text for readability */
+        line-height: 1.6;
+        color: #333;
+    }
+
+    /* Contact Section */
+    #contact h2 {
+        font-size: 2em; /* Adjust heading size for mobile */
+    }
+
+    .contact-icons {
+        display: flex;
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center;
+    }
+
+    .contact-icon {
+        margin-bottom: 15px; /* Add space between icons */
+        width: 50px; /* Adjust icon size for mobile */
+    }
+
+    .contact-text {
+        font-size: 1.1em; /* Adjust text size for readability */
+        text-align: center;
+        color: #333;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: white;
+        font-size: 1em; /* Footer text size */
+    }
+
+    /* Images */
+    img {
+        max-width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    /* Buttons */
+    button {
+        font-size: 1.2em; /* Larger button text */
+        padding: 10px 20px;
+        width: 100%; /* Full width buttons on mobile */
+    }
+}
 
 
 
