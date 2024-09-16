@@ -225,20 +225,47 @@ section {
 #skills {
     padding: 20px;
     text-align: center;
-    background-color: #e7e9ff; /* Light gray background for contrast */
+    background-color: #e7e9ff; /* Retaining original background color */
 }
 
 #skills h2 {
     margin-bottom: 40px;
-    font-size: 3em;
+    font-size: 3em; /* Retaining original font size */
 }
 
 /* Flexbox container for skills */
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Increased gap between skill boxes */
+    gap: 30px; /* Retaining original gap */
     flex-wrap: wrap;
+}
+
+/* Individual skill boxes */
+.skill-box {
+    background-color: white;
+    border: 2px solid #ddd;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        gap: 20px; /* Reduced gap for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        flex-direction: column; /* Stack skill boxes vertically on small screens */
+        gap: 15px; /* Further reduced gap for small screens */
+    }
 }
 
 /* Individual skill boxes */
@@ -307,37 +334,39 @@ section {
     margin-right: 10px;
 }
 
+
 /* Certificates Section Styles */
 #certificates {
     text-align: center;
     padding: 40px 20px;
-    background-color: #e7e9ff;
+    background-color: #e7e9ff; /* Retaining original background color */
 }
 
 #certificates h2 {
     margin-bottom: 30px;
-    font-size: 3em;
-    color: #000000;
+    font-size: 2.5em; /* Slightly smaller font size for better fit */
+    color: #000000; /* Retaining original color */
 }
 
 .certificates-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-auto-rows: 330px; /* Define a base row height */
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    grid-auto-rows:340px; /* Allow rows to adjust height based on content */
+    gap: 20px; /* Retaining original gap */
 }
 
 .certificate img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure images don't exceed container height */
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .certificate.portrait {
-    grid-row: span 2; /* Make the portrait certificate span 2 rows */
+    grid-row: span 2; /* Ensure portrait certificates span two rows */
 }
 
 /* Hover Effect */
@@ -350,12 +379,14 @@ section {
 @media (max-width: 768px) {
     .certificates-container {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        grid-auto-rows: minmax(150px, auto); /* Adjust row height for medium screens */
     }
 }
 
 @media (max-width: 480px) {
     .certificates-container {
         grid-template-columns: 1fr; /* 1 column for small screens */
+        grid-auto-rows: minmax(150px, auto); /* Adjust row height for small screens */
     }
 }
 
