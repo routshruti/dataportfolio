@@ -334,7 +334,6 @@ section {
     margin-right: 10px;
 }
 
-
 /* Certificates Section Styles */
 #certificates {
     text-align: center;
@@ -344,21 +343,20 @@ section {
 
 #certificates h2 {
     margin-bottom: 30px;
-    font-size: 2.5em; /* Slightly smaller font size for better fit */
+    font-size: 3em; /* Slightly smaller font size for better fit */
     color: #000000; /* Retaining original color */
 }
 
 .certificates-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
-    grid-auto-rows:340px; /* Allow rows to adjust height based on content */
+    grid-auto-rows: 330px; /* Adjust to allow for better row height control */
     gap: 20px; /* Retaining original gap */
 }
 
 .certificate img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    max-height: 100%; /* Ensure images don't exceed container height */
+    height: 100%; /* Maintain aspect ratio */
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -376,10 +374,10 @@ section {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .certificates-container {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-        grid-auto-rows: minmax(150px, auto); /* Adjust row height for medium screens */
+        grid-auto-rows: minmax(100px, auto); /* Adjust row height for medium screens */
     }
 }
 
@@ -389,6 +387,7 @@ section {
         grid-auto-rows: minmax(150px, auto); /* Adjust row height for small screens */
     }
 }
+
 
 .project-category {
     display: inline-block;
