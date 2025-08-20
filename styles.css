@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Georgia, serif;
+    font-family: Times 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,10 +31,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    font-weight: bold;
+    color: rgb(109, 109, 109);
     text-decoration: none;
-    font-size: 16px; /* Default text size */
-    padding-bottom: 2px; /* Add padding to create space for underline */
+    font-size: 16px;
+    padding-bottom: 2px;
+    transition: all 0.2s ease-in-out; /* smooth hover/active transition */
 }
 
 /* Active state styles */
@@ -46,6 +48,14 @@ nav ul li a.active {
     font-size: 16px; /* Slightly larger text size */
     padding-bottom: 2px; /* Increase padding for more space */
 }
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* optional to keep color */
+    text-decoration: underline;
+    text-decoration-color: rgb(51, 79, 172);
+}
+
 
 /* Home Section Styles */
 #home {
@@ -78,15 +88,15 @@ nav ul li a.active {
 }
 
 .formal-text {
-    font-family: 'Georgia', serif; /* Replace 'Georgia' with 'Garamond' if preferred */
+    font-family: 'Times New Roman', Times, serif; /* Replace 'Georgia' with 'Garamond' if preferred */
     font-size: 1em;
     color: black;
     margin: 0; /* Remove default margin */
 }
 
 .formal-text-large {
-    font-family: 'Georgia', serif; /* Replace 'Garamond' if preferred */
-    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif; /* Replace 'Garamond' if preferred */
+    font-size: 1em;
     color: black;
     margin: 0; /* Remove default margin */
 }
@@ -157,7 +167,7 @@ h2 {
 
 /* Styles for Title Parts */
 .title-part1 {
-    font-family: Georgia, serif; /* First part in Georgia */
+    font-family: 'Times New Roman', Times, serif; /* First part in Georgia */
     color: black; /* Black color for first part */
 }
 
@@ -221,23 +231,78 @@ section {
     margin-bottom: 20px; /* Add space between paragraphs */
 }
 
+/*statistics section*/
+
+.statistics-section {
+  padding: 60px 20px;
+  background-color: #e7e9ff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.statistics-section h2 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+.statistics-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat-box {
+  background: #ffffff;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.stat-box h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin: 0 0 8px;
+}
+
+.stat-box p {
+  font-size: 1em;
+  color: #555;
+  margin: 0;
+}
+
+
 /* Skills Section Styles */
 #skills {
     padding: 20px;
     text-align: center;
-    background-color: #e7e9ff; /* Retaining original background color */
+    background-color: #e7e9ff; /* Light gray background for contrast */
 }
 
 #skills h2 {
-    margin-bottom: 40px;
-    font-size: 3em; /* Retaining original font size */
+    margin-bottom: 30px;
+    font-size: 3em;
 }
 
 /* Flexbox container for skills */
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Retaining original gap */
+    gap: 15px; /* Increased gap between skill boxes */
     flex-wrap: wrap;
 }
 
@@ -245,27 +310,13 @@ section {
 .skill-box {
     background-color: white;
     border: 2px solid #ddd;
-    padding: 20px;
-    font-size: 1.5em;
+    padding: 15px;
+    font-size: 1.2em;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    white-space: nowrap;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .skills-container {
-        gap: 20px; /* Reduced gap for medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .skills-container {
-        flex-direction: column; /* Stack skill boxes vertically on small screens */
-        gap: 15px; /* Further reduced gap for small screens */
-    }
+    display: inline-block; /* Ensure boxes fit their content */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 #contact {
@@ -325,33 +376,33 @@ section {
 #certificates {
     text-align: center;
     padding: 40px 20px;
-    background-color: #e7e9ff; /* Retaining original background color */
+    background-color: #e7e9ff;
 }
 
 #certificates h2 {
     margin-bottom: 30px;
-    font-size: 3em; /* Slightly smaller font size for better fit */
-    color: #000000; /* Retaining original color */
+    font-size: 3em;
+    color: #000000;
 }
 
 .certificates-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
-    grid-auto-rows: 330px; /* Adjust to allow for better row height control */
-    gap: 20px; /* Retaining original gap */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-auto-rows: 380px; /* Define a base row height */
+    gap: 20px; /* Space between items */
 }
 
 .certificate img {
     width: 100%;
-    height: 100%; /* Maintain aspect ratio */
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .certificate.portrait {
-    grid-row: span 2; /* Ensure portrait certificates span two rows */
+    grid-row: span 2; /* Make the portrait certificate span 2 rows */
 }
 
 /* Hover Effect */
@@ -376,17 +427,19 @@ section {
 }
 
 
+/* ==================== PROJECT SECTION ==================== */
+
 .project-category {
     display: inline-block;
-    width: 250px; /* Adjust width if needed */
+    width: 250px;
     margin: 20px;
     padding: 20px;
     background-color: #fff;
     border: 2px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 15px;
-    text-align: center; /* Center text and icons */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-category h3 {
@@ -396,16 +449,16 @@ section {
 }
 
 .project-icon {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Ensure height is proportional to width */
-    margin-bottom: 0; /* Space between icon and text */
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0;
 }
 
 .project-category button {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
-    background-color: #000000;
+    background-color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -413,7 +466,7 @@ section {
 }
 
 .project-category button:hover {
-    background-color: #000000;
+    background-color: #222;
 }
 
 .project-category:hover {
@@ -421,7 +474,8 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Popup Styles */
+/* ==================== POPUP ==================== */
+
 .popup {
     display: none;
     position: fixed;
@@ -436,14 +490,15 @@ section {
 
 .popup-content {
     background-color: #e7e9ff;
-    margin: 5% auto; /* Reduced margin for better positioning */
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 700px;
-    text-align: left;
+    max-width: 800px;
     position: relative;
-    overflow: auto; /* Ensures content scrolls if too long */
+    overflow: auto;
+    text-align: left;
+    border-radius: 8px;
 }
 
 /* Close button */
@@ -455,61 +510,92 @@ section {
     position: absolute;
     top: 10px;
     right: 25px;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
     cursor: pointer;
 }
+.close:hover {
+    color: black;
+}
 
-/* Banner Image */
+/* Banner image */
 .project-banner {
     width: 100%;
     height: auto;
     display: block;
-    margin: 0; /* Remove margin around banner */
+    border-radius: 0;
+    margin: 0;
 }
 
-/* Project Content Container */
+/* Buttons inside project popup */
+.project-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: #dcdcdcde; /* same grey as content */
+}
+
+.project-btn {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+.project-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Title & Description container */
 .project-content {
-    background-color:#dcdcdcde;
+    background-color: #dcdcdcde;
     padding: 15px;
-    border-radius: 0px; /* Rounded corners for a softer look */
-    margin: 0; /* Remove margin to connect with banner */
+    border-radius: 0;
 }
 
-/* Title in Popup */
 .project-content h3 {
-    color: black; /* Change title color to black */
-    font-size: 1.5em; /* Adjust font size if needed */
-    margin-top: 0; /* Remove top margin to align with banner */
-    margin-bottom: 10px; /* Space between title and description */
+    color: #000;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-/* Description in Popup */
 .project-content p {
-    color: #333333; /* Change description color to dark grey */
-    font-size: 1em; /* Adjust font size if needed */
-    margin-top: 0; /* Remove top margin to align with title */
+    color: #333;
+    font-size: 1em;
+    margin-top: 0;
 }
 
-/* Remove underline from links within popups */
+/* Remove underline on links */
 .popup-content a {
-    color: #007BFF;
-    text-decoration: none; /* No underline for links */
+    color: #1d2a38;
+    text-decoration: none;
 }
-
 .popup-content a:hover {
-    text-decoration: none; /* No underline on hover */
+    text-decoration: none;
 }
 
-/* Additional Spacing for Popups */
-.popup-content > a {
-    display: block;
-    margin-bottom: 20px; /* Add spacing between multiple projects */
+/* Individual project block inside the popup */
+.project-item {
+    background-color: #dcdcdcde; /* grey background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* spacing between project blocks */
 }
+
+/* Remove bottom margin for the last one */
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: Space between banner and links */
+.project-item img.project-banner {
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -530,4 +616,24 @@ footer {
     padding: 2px;
     margin-top: auto; /* Pushes footer to the bottom */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
